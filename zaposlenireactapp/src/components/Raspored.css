@@ -1,0 +1,14 @@
+.raspored{
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 12%;
+
+}
+.rasporedNaslov{
+    text-align: center;
+    margin-top: 1%;
+}
+
+
+/* tr { display: block; float: left; }
+th, td { display: block; } */
