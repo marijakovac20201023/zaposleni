@@ -16,7 +16,7 @@ class SmenaSeeder extends Seeder
     {
         $s1 =  new Smena();
         $s1->radnikID = 1;
-        $s1->datum='2022-05-31';
+        $s1->datum='2022-06-26';
         $s1->tipSmeneID = 1;
         $s1->pocetak = 10;
  
@@ -25,7 +25,7 @@ class SmenaSeeder extends Seeder
 
         $s2 =  new Smena();
         $s2->radnikID = 2;
-        $s2->datum='2022-05-31';
+        $s2->datum='2022-06-27';
         $s2->tipSmeneID =2;
         $s2->pocetak = 12;
        
@@ -34,11 +34,13 @@ class SmenaSeeder extends Seeder
         
         $s3 =  new Smena();
         $s3->radnikID = 2;
-        $s3->datum='2022-06-1';
+        $s3->datum='2022-06-30';
         $s3->tipSmeneID =1;
         $s3->pocetak = 8;
        
         $s3->save();
          
+
+        
     }
 }
