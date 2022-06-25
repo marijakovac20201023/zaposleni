@@ -1,0 +1,17 @@
+.notfound{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    margin:100px;
+    margin-bottom:300px;
+}
+
+.smajli{
+    height: 300px;
+    width: 300px;
+}
+
+ 
