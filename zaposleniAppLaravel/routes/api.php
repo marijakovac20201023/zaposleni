@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-//svi korinsici mogu ili da se uloguju ili da se registruju
+ 
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 Route::get('smene', [SmenaController::class, 'index']);
@@ -28,7 +28,7 @@ Route::get('users', [UserController::class, 'index']);
 Route::put('users/{id}', [UserController::class, 'update']);
  
 
-Route::group(['middleware' => ['auth:sanctum']], function () {  //obicni ulogovani korisnici
+Route::group(['middleware' => ['auth:sanctum']], function () {   
     Route::get('/profiles', function (Request $request) {  
         return auth()->user();
     });
@@ -44,10 +44,10 @@ Route::group(['middleware' => ['auth:sanctum']], function () {  //obicni ulogova
 });
 
 
-Route::middleware(['auth:sanctum','isAPIAdmin'])->group(function(){ //ako je ulogovan admin
+Route::middleware(['auth:sanctum','isAPIAdmin'])->group(function(){  
 
     Route::get('/proveri', function(){
-        return response()->json(['message'=>'You are in','status'=>200],200);
+        return response()->json(['message'=>'Admin je ulogovan','status'=>200],200);
     });
    
 
